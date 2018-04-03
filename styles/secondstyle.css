@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab {
+  font-family: 'FontAwesome';
+}
+
+.fa-facebook::before {
+  content: "\f39e";
+  color: #dab33e;
+}
+
+.fa-youtube::before {
+  content: "\f167";
+  color: #dab33e;
+}
+
+.fa-twitter::before {
+  content: "\f099";
+  color: #dab33e;
+}
+
+.fa-trello::before{
+  content: "\f181";
+  color: #fafafa;
+}
+
+.fa-cc-discover::before{
+  content: "\f1f2";
+  color: #fafafa;
+}
+
+.fa-cc-visa::before{
+  content: "\f1f0";
+  color: #fafafa;
+}
+
+.fa-cc-amex::before{
+  content: "\f1f3";
+  color: #fafafa;
+}
+
+.fa-cc-paypal::before{
+  content: "\f1f4";
+  color: #fafafa;
+}

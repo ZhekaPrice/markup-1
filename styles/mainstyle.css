@@ -1,0 +1,683 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+   list-style-type: none;
+}
+@font-face {
+    font-family: 'YesevaOne';
+    src: url('../fonts/YesevaOne-Regular_v2.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GenBasBold';
+    src: url('../fonts/GenBasB.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Italic';
+    src: url('../fonts/OpenSans-Italic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'OpenSans-Italic';
+    src: url('../fonts/OpenSans-Italic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/Lato-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+  width: 1600px;
+  min-height: 500px; max-height: 1000px;
+  background-image: url("../images/bg.png");
+  margin: 0 auto;
+  background: url("../images/pattern.png");
+}
+
+.main-part {
+  width: 1600px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.white {
+  filter: brightness(0) invert(1);
+}
+
+.firstdecoration {
+  background-image: url('../images/firstdecoration.png');
+}
+
+.seconddecoration {
+  background-image: url('../images/seconddecoration.png');
+}
+
+
+.fourthdecoration {
+  background-image: url('../images/fourthdecoration.png');
+}
+
+.firstingredient {
+  background-image: url('../images/firstingredient.png');
+}
+
+.secondingredient {
+  background-image: url('../images/secondingredient.png');
+}
+
+.thridingredient {
+  background-image: url('../images/thridingredient.png');
+}
+
+.firstimage {
+  background-image: url('../images/rightFood1.png');
+}
+
+.secondimage {
+  background-image: url('../images/rightFood2.png');
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  height: 750px;
+  background: url('../images/bgheader.png') no-repeat;
+  background-size: cover;
+}
+
+h1,h2,h3{
+  font-weight: initial;
+}
+
+section{
+  box-shadow:inset -5px 0px 40px gray;
+}
+
+.header-upstairs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 110px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
+
+.logo {
+  width: 400px;
+  padding: 35px 0px 0px 150px;
+  text-transform: uppercase;
+  font-family: YesevaOne;
+  font-size: 3em;
+  z-index: 1;
+}
+
+.logo a {
+    color: rgba(255,255,255,0.95);
+    transition: color ease 0.3s;
+}
+
+.logo a:hover {
+  color: rgba(255,255,255,0.7);
+}
+
+.MainNavigation {
+  width: 1000px;
+  height: 100px;
+  font-family: YesevaOne;
+  overflow: hidden;
+}
+
+.MainNavigation ul {
+  display: inline-block;
+}
+
+.MainNavigation ul > li {
+	float: left;
+}
+
+.MainNavigation li > a {
+	font-size: 1.2em;
+	display: inline-block;
+	padding: 50px 20px 10px;
+  color: #fff;
+  transition: border ease 0.1s;
+}
+
+.MainNavigation li ul a {
+  padding: 50px 10px 10px;
+}
+
+.MainNavigation li ul a:hover {
+  border-top: 3px solid #cc9900;
+}
+
+.MainNavigation li a:hover {
+  border-top: 3px solid #fff;
+}
+
+h1 {
+  margin: 140px 0 20px 0;
+  color: #f3f3f4;
+  font-family: YesevaOne;
+  font-size: 5em;
+  width: 900px;
+  height: 220px;
+  line-height: 1.4;
+  text-align: center;
+  overflow: hidden;
+  text-shadow: #000 1px 1px 1px;
+}
+
+.decoration-long {
+  width: 250px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.restraunt-nav {
+  font-family: Lato-Regular;
+  text-transform: uppercase;
+  margin: 30px 0 0 0;
+  overflow: hidden;
+  height: 60px;
+}
+
+.restraunt-nav ul {
+  display: inline-block;
+}
+
+.restraunt-nav li {
+   float: left;
+}
+
+.restraunt-nav li a {
+	font-size: 1.1em;
+	display: inline-block;
+	padding: 15px 50px;
+  color: #fff;
+  transition: all ease 0.2s;
+}
+
+.restraunt-nav li:first-child a {
+  background-color: rgba(0,0,0,0.7);
+  border: 1px solid #000;
+  margin-right: 15px;
+}
+
+.restraunt-nav li:nth-child(2) a {
+  background-color: rgba(255,255,255,0.2);
+  border: 1px solid #fff;
+  margin-left: 15px;
+}
+
+.restraunt-nav li:first-child a:hover {
+  background-color: rgba(255,255,255,0.2);
+  border: 1px solid #fff;
+}
+
+.restraunt-nav li:nth-child(2) a:hover {
+  background-color: rgba(0,0,0,0.7);
+  border: 1px solid #000;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 70px 0 0 0;
+  box-sizing: border-box;
+  margin: auto;
+  width: 100%;
+  height: 710px;
+  background-image: url('../images/pattern.png'), linear-gradient(to left, rgba(217,217,217,0.7), rgba(255,255,255,1));
+}
+
+.left-description {
+  display: inherit;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 50px 15px 0 0;
+}
+
+.left-description h2 {
+  color: #cc9900;
+  font-family: YesevaOne;
+  font-size: 2.3em;
+  margin: 0 0 10px 0;
+}
+
+.review-chief {
+  width: 420px;
+  height: 120px;
+  overflow: hidden;
+  color: #4c4c4c;
+  margin: 15px 0 0 0;
+  font-family: Lato-Regular;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.chief {
+  margin: 30px 0 0 0;
+  width: 295px;
+  height: 221px;
+  background-image: url('../images/cook.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.dish {
+  margin-left: 15px;
+  width: 612px;
+  height: 625px;
+  background-image: url('../images/dish.png');
+  background-repeat: no-repeat;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 758px;
+  width: 100%;
+  background-image: url('../images/bgingredients.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ingredients-description {
+  display: inherit;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 570px;
+  box-sizing: border-box;
+  padding: 90px 0 0 0;
+  width: 557px;
+  margin-left: 500px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.ingredients-description h2 {
+  color: #fff;
+  font-family: YesevaOne;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.Textofingredients {
+  width: 420px;
+  height: 150px;
+  overflow: hidden;
+  color: #fff;
+  margin: 20px 0 0 0;
+  font-family: Lato-Regular;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.ingredients-images {
+  display: inherit;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 420px;
+  margin-top: 30px;
+}
+
+.igredient {
+  width: 98px;
+  height: 98px;
+  border-radius: 100px;
+  border: 5px solid #4d443c;
+  background-position: center;
+}
+
+.menu-list {
+  width: 100%;
+  padding-bottom: 100px;
+  background-image: url('../images/pattern2.png'), linear-gradient(to right, rgba(217,217,217,0.7), rgba(255,255,255,1));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.menu-container {
+  width: 600px;
+  margin-top: 25px;
+  display: inherit;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu-block {
+  width: 100%;
+  margin-top: 50px;
+  display: inherit;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu-block h2 {
+  color: #cc9900;
+  font-family: YesevaOne;
+  font-size: 2em;
+  margin-bottom: 7px;
+}
+
+.menu-block h3, .dish-cost {
+  color: #cc9900;
+  font-family: YesevaOne;
+  font-size: 1.3em;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.menu-block hr {
+    color: #cc9900;
+    background-color: #cc9900;
+    height: 1px;
+    border: none;
+    clear: both;
+}
+
+.dish-block {
+  width: 420px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.dish-wrapper {
+  padding: 10px;
+  float: right;
+  width: 385px;
+}
+
+.dish-wrapper--border {
+  border: 1px solid #cc9900;
+}
+
+.dish-special-marker {
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  font-family: Lato-Regular;
+  float: right;
+  background-color: #cc9900;
+}
+
+.disable {
+  display: none;
+}
+
+.dish-description:first-child{  
+  margin-top: 10px;
+}
+
+.dish-description {
+  font-family: Lato-Regular, YesevaOne;
+  font-size: 1em;
+  color: #4c4c4c;
+  margin-top: 10px;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.costs {
+  float: right;
+}
+
+.review {
+  display: flex;
+  height: 760px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/bgreview.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.review-area {
+  width: 770px;
+  height: 557px;
+  display: inherit;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.review-area h2 {
+  margin: 100px 0 0 0;
+  color: #fff;
+  font-family: YesevaOne;
+  font-size: 2.3em;
+  margin-bottom: 10px;
+}
+
+.review-text p {
+  margin: 15px 0 0 0;
+  width: 600px;
+  font-family: YesevaOne;
+  font-size: 1.3em;
+  text-align: center;
+  overflow: hidden;
+  height: 220px;
+  color: #dde0df;
+  line-height: 2;
+}
+
+.review-text:before {
+content: "\201C";
+display: block;
+position: relative;
+left:-50px;
+top:50px;
+font-family: Georgia;
+color: #979896;
+font-size: 7em;
+
+line-height: 0;
+}
+
+.review-text .footer{
+  margin-top: 20px;
+  height: 50px;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  font-family: Lato-Regular;
+}
+
+.booking {
+  width: 100%;
+  display: flex;flex-direction: row;
+  justify-content: center;align-items: flex-start;
+  padding-top: 100px;
+  box-sizing: border-box;
+  height: 710px;
+  background-image: url('../images/pattern.png'), linear-gradient(to left, rgba(217,217,217,0.3), rgba(255,255,255,1));
+}
+
+.booking-image {
+  width: 270px;
+  height: 507px;
+}
+
+.booking-image:first-child {
+  margin-right: 15px;
+}
+
+.booking-image:nth-child(2) {
+  margin-left: 15px;
+  margin-right: 50px;
+}
+
+.booking-container {
+  width: 450px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.booking-container h2 {
+  color: #cc9900;
+  font-family: YesevaOne;
+  font-size: 2.3em;
+  margin-bottom: 10px;
+}
+
+.booking-text {
+  width: 430px;
+  text-align: center;
+  font-family: Lato-Regular;
+  font-size: 1em;
+  color: #4c4c4c;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.booking-form label {
+  margin: 15px 10px 0 10px;
+  font-weight: bold;
+  color: #cc9900;
+  font-family: OpenSans-Regular;
+  margin-bottom: 10px;
+}
+
+label ,input,select {
+    display: block;
+}
+
+.booking-form label input,select {
+  padding: 5px 15px;
+  margin-top: 5px;
+  width: 200px;
+  border: 1px solid #c8c6c6;
+  background-color: rgba(255,255,255,0.5);
+  font-size: 1em;
+  box-sizing: border-box;
+  font-family: OpenSans-Italic;
+}
+
+.booking-buttom {
+  width: 200px;
+  padding: 7px 10px;
+  border: none;
+  background-color: #cc9900;
+  margin-top: 30px;
+  font-size: 1em;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: OpenSans-Italic;
+}
+
+.dateInput::after{
+  content: url("../images/calendar.png");
+}
+
+.bottom{
+  display: flex;
+  font-family: Lato-Regular;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  height: 320px;
+  color: white;
+  overflow: hidden;
+}
+
+.bottom h3{
+  font-family: YesevaOne;
+}
+
+.bottom ul{
+  display: flex;
+  text-align: justify;
+ }
+
+.bottom li{
+  width: 370px;
+  height: 165px;
+
+  display: inline-block;
+  align-content: center;
+  text-align: center;
+}
+
+.bottom .decoration-long {
+  width: auto;
+}
+
+.icons{
+  justify-content: center;
+}
+
+.icons li{
+  width: auto;
+  height: auto;
+  margin: 5px;
+  position: relative;
+  top:30px;
+}
+
+footer{
+  flex: 0 0 auto;
+}
+
+footer .fab::before{
+  color: white;
+}
